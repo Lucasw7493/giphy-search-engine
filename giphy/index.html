@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giphy Search Engine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with title and navigation links -->
+  <header>
+    <h1>Giphy Search Engine</h1>
+    <nav>
+      <ul>
+        <li><a onclick="goHome()">Home</a></li>
+        <li><a onclick="randomSearch()">Random</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Search container with input field and search button -->
+  <div id="search-container">
+    <input type="text" id="searchTerm" placeholder="Enter a search term">
+    <button onclick="searchGiphy(1)">Search</button>
+  </div>
+
+  <!-- Container for displaying search results -->
+  <div id="search-results"></div>
+  
+  <!-- Pagination buttons for navigating through search results -->
+  <div class="pagination">
+    <button id="prevPage" onclick="prevPage()" disabled>Previous</button>
+    <button id="nextPage" onclick="nextPage()">Next</button>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
