@@ -1,2 +1,0 @@
-# giphy-search-engine
-gifs
