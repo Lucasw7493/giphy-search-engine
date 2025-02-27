@@ -6,7 +6,7 @@ function searchGiphy(page) {
   const searchTerm = document.getElementById('searchTerm').value; // Get the search term from input field
   const apiKey = '2juLOltfWKyQ37UnSKOJ6j6HNaCJzyhw'; // Your Giphy API key
   const offset = (page - 1) * imagesPerPage; // Calculate the offset for pagination
-  const url = `http://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchTerm}&limit=${imagesPerPage}&offset=${offset}`; // Construct the API URL
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchTerm}&limit=${imagesPerPage}&offset=${offset}`; // Construct the API URL
 
   fetch(url) // Fetch data from the Giphy API
     .then(response => response.json()) // Convert the response to JSON
